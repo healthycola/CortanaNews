@@ -11,7 +11,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -24,5 +24,6 @@
         <Button Grid.Row="1" Grid.Column="1" Name="HeadLines" Click="HeadLineButtonClick" Content="Headlines" HorizontalAlignment="Center"/>
         <Button Grid.Row="1" Grid.Column="2" Name="Fullnews" Click="FullnewsButtonClick" Content="Full News" HorizontalAlignment="Center"/>
         <TextBlock Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="" Name="NewsText" TextWrapping="Wrap"/>
+        <MediaElement x:Name="media" AutoPlay="False" MediaEnded="media_MediaEnded"/>
     </Grid>
 </Page>
